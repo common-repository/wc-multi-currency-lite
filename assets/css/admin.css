@@ -1,0 +1,154 @@
+table.form-table-currency th.wooexp-currency-top{
+    margin: 0;
+    padding: 0;
+}
+table.wooexp-currency-list{
+    width: 100%;
+    border-collapse: collapse;
+}
+table.wooexp-currency-list thead{
+    background-color: #4d5959;
+    color: #fff;
+}
+table.wooexp-currency-list thead tr th{
+    text-align: center;
+    color: #fff;
+    padding: 6px 0;
+    border: 1px solid #D8D8D8;
+}
+
+table.wooexp-currency-list thead tr th:nth-child(1),
+table.wooexp-currency-list thead tr th:nth-child(2){
+    width:10%;
+}
+
+table.wooexp-currency-list thead tr th:nth-child(3),
+table.wooexp-currency-list thead tr th:nth-child(4),
+table.wooexp-currency-list thead tr th:nth-child(5){
+    width: 15%;
+}
+
+table.wooexp-currency-list thead tr th:nth-child(6){
+    width: 15%;
+}
+
+table.wooexp-currency-list thead tr th:nth-child(7){
+    width: 10%;
+}
+table.wooexp-currency-list thead tr th:nth-child(8){
+    width: 10%;
+}
+
+table.wooexp-currency-list tbody tr td{
+    text-align: center;
+    background-color: #fff;
+    color: #4d5959;
+    border: 1px solid #D8D8D8;
+}
+
+table.wooexp-currency-list tfoot tr td{
+    background-color: #F8F8F8;
+}
+
+table.wooexp-currency-list tfoot tr td div.wooexp-currency-foot{
+    text-align: right;
+}
+
+.wc_currency_add_main{
+    min-width: 320px;
+}
+
+.wc_currency_add_main .currency-box h2{
+    margin:0;
+    padding: 0 0 15px 0;
+    text-align:center;
+}
+.wc_currency_add_main .currency-box-row{
+    padding: 6px 0;
+    display: table;
+    width:100%;
+}
+.wc_currency_add_main .currency-box-row > label{
+    width: 30%;
+    display: table-cell;
+}
+.wc_currency_add_main .currency-box-row > .currency-box-in{
+    width: 70%;
+    display: table-cell;
+}
+.wc_currency_add_main .currency-box-row > .currency-box-in input[type="text"],
+.wc_currency_add_main .currency-box-row > .currency-box-in select,
+.wc_currency_add_main .currency-box-row > .currency-box-in input[type="number"]{
+    width: 100%;
+    display:block;
+}
+a.wooexp-default-currency-remove{
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color:#B4B9BE;
+}
+
+.wooexp-currency-foot > .wooexp-currency-rate-time{
+    vertical-align:middle;
+    padding-right: 60px;
+}
+
+.wooexp-currency-foot > .wooexp-currency-rate-time > span{
+    font-weight: normal;
+}
+
+.wooexp-currency-foot > .wooexp-currency-notice{
+    display: inline-block;
+    vertical-align:middle;
+    padding-right: 60px;
+    color: #ff0000;
+}
+
+table.form-table-currency tbody tr td .unlock-pro{
+    margin-left: 20px;
+    display:inline-block!important;
+}
+
+table.form-table-currency tbody tr td .unlock-pro > a{
+    display:inline-block!important;
+}
+
+.currency-box-row > a.get-pro{
+    font-size:18px;
+    box-shadow: none;
+}
+
+table.wooexp-currency-list a.remove-wooexp-currency{
+    box-shadow: none;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.blockUI.blockOverlay::before {
+    height: 1em;
+    width: 1em;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -.5em;
+    margin-top: -.5em;
+    content: '';
+    -webkit-animation: spin 1s ease-in-out infinite;
+    animation: spin 1s ease-in-out infinite;
+    background: url(../images/loader.svg) center center;
+    background-size: cover;
+    line-height: 1;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(0,0,0,.75);
+}

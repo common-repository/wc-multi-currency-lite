@@ -1,0 +1,6 @@
+.wooexp-currency-item{
+    cursor: pointer;
+}
+.wooexp-currency-item > a{
+    /*max-width: 40px;*/
+}
